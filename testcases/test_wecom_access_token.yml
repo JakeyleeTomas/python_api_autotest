@@ -1,0 +1,26 @@
+- name: 获取access_token
+  request:
+    method: get
+    url: https://qyapi.weixin.qq.com/cgi-bin/gettoken
+    params:
+      corpid: ww08701ec12f7ef7ffc5
+      corpsecret: 9BBxJMszzlOULZsy5xrjwo6KM5AUk0-obzMHdw3hoWFYo
+  validate: None
+
+- name: co必填rpid
+  request:
+    method: get
+    url: https://qyapi.weixin.qq.com/cgi-bin/gettoken
+    params:
+      corpid: ""
+      corpsecret: 9BBxJMszzOULZsy5xrjwo6KM5AUk0-obzMHdw3hoWFYo
+  validate: None
+
+- name: corpsecret必填
+  request:
+    method: get
+    url: https://qyapi.weixin.qq.com/cgi-bin/gettoken
+    params:
+      corpid: ww08701ecf7ef7ffc5
+      corpsecret: ""
+  validate: None

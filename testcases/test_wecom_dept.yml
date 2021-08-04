@@ -1,0 +1,11 @@
+- name: 创建部门
+  request:
+    method: post
+    url: https://qyapi.weixin.qq.com/cgi-bin/department/create
+    json:
+      name: 广州研发中心
+      name_en: RDGZ
+      parentid: 1
+      order: 1
+      id: 2
+  validate: None
